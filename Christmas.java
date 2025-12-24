@@ -1,10 +1,7 @@
-
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Random;
-
 
 public class Christmas{
 	public static void main(String[] args){
@@ -28,11 +25,11 @@ public class Christmas{
 		l1.setFont(new Font("Arial" , Font.PLAIN , 20));
 
 		JLabel l2 = new JLabel("");
-		l2.setBounds(20,60,400,40);
-		//l2.setFont(new Font("Arial" , Font.ITALIC , 18));
+		l2.setBounds(20,60,600,40);
+		l2.setFont(new Font("default" , Font.ITALIC , 18));
 
 		JButton b1 = new JButton("GENERATE MESSAGE");
-		b1.setBounds(150,120,200,40);
+		b1.setBounds(200,120,200,40);
 		b1.setFocusPainted(false);
 
 		b1.addActionListener(new ActionListener(){
@@ -48,7 +45,7 @@ public class Christmas{
 		f.add(l2);
 		f.add(b1);
 
-		f.setSize(500,250);
+		f.setSize(650,250);
 		f.setLayout(null);
 		f.setVisible(true);
 		
